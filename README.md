@@ -5,7 +5,9 @@
 ## Usage
 
 ```sh
-make run
+make factorial
 
-make test
+make server
+
+make tests
 ```

@@ -1,7 +1,11 @@
-run:
-	-deno main.ts
-.PHONY: run
+factorial:
+	-deno examples/factorial.ts
+.PHONY: factorial
 
-test:
-	-deno test/calculator.spec.ts
-.PHONY: test
+server:
+	-deno --allow-net examples/server.ts
+.PHONY: server
+
+tests:
+	-deno tests/*.spec.ts
+.PHONY: tests
